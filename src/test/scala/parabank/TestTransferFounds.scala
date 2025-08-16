@@ -23,6 +23,6 @@ class TestTransferFounds extends Simulation{
   
   // 3 Load Scenario
   setUp(
-    scn.inject(rampUsersPerSec(5).to(15).during(30))
+    scn.inject(atOnceUsers(80))
   ).protocols(httpConf);
 }
